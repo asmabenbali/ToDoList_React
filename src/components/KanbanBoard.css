@@ -1,0 +1,145 @@
+/* Main Container */
+.kanban-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: whitesmoke;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Add Task Button */
+.add-task-button {
+    padding: 12px 24px;
+    margin: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-task-button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Container */
+.form-container {
+    margin: 25px 0;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 320px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input and Select */
+.form-container input, .form-container select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.form-container input:focus, .form-container select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Kanban Board */
+.kanban-board {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Kanban Column */
+.kanban-column {
+    padding: 20px;
+    border-radius: 8px;
+    width: 320px;
+    background: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Column Header */
+.kanban-column h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Column Colors */
+.kanban-column.todo {
+    background: #f8d7da;
+}
+
+.kanban-column.inProgress {
+    background: #fff3cd;
+}
+
+.kanban-column.done {
+    background: #d4edda;
+}
+
+/* Task Item */
+.task-item {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 12px 0;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    cursor: move;
+}
+
+
+.task-item:hover {
+    transform: scale(1.03);
+}
+
+/* Save and Cancel Buttons */
+.save-button, .cancel-button {
+    padding: 8px 18px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: transform 0.2s ease;
+}
+
+.save-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.save-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.cancel-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
